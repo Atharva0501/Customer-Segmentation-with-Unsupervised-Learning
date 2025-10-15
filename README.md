@@ -16,22 +16,11 @@ Segment retail customers into actionable groups using PCA + clustering (K-Means 
 - **Name:** Customer Personality Analysis (marketing_campaign.csv)
 - **Signals:** demographics (age, education, family), income, product spend (wines, fruits, meat, fish, sweets, gold), channels (web/catalog/store), web visits, campaign responses, and join date.
 
-> Replace with your local path if different.
-
----
-
-## 🧱 What’s Inside
-- `Customer_Segmentation.ipynb` — main notebook with the full workflow
-- (Optional) `data/marketing_campaign.csv` — dataset (add to `.gitignore` if needed)
-- (Optional) `figures/` — saved plots
-- (Optional) `src/` — helper scripts if you modularize later
-
-> Git doesn’t track empty folders. Add a placeholder like `.gitkeep` if you want to commit directory structure.
 
 ---
 
 ## 🛠️ Methods & Engineering
-- **Feature engineering (examples):**
+- **Feature engineering:**
   - `Age` from `Year_Birth`
   - `Spent` = sum of category spends
   - Household: `Children`, `Family_Size`, `Is_Parent`
@@ -55,10 +44,4 @@ Segment retail customers into actionable groups using PCA + clustering (K-Means 
 
 ---
 
-## 🚀 Getting Started
-### 1) Clone & env
-```bash
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
-python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
-pip install -r requirements.txt  # or see minimal list below
+
